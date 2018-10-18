@@ -1,0 +1,16 @@
+#budget{
+    position: absolute;
+    right:0;
+    padding-right: 15px;
+}
+
+.searchInput {
+    background-color: rgb(39, 38, 38);
+    border-radius: 5px;
+    padding:5px;
+    color:white;
+}
+
+.container{
+    padding: 15px;
+}

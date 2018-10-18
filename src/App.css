@@ -30,3 +30,29 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: rgb(20, 19, 19);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#nav {
+  margin: 15px;
+}
+
+#nav > a{
+  margin: 10px;
+  color: white;
+  text-decoration:none; 
+  text-shadow: -1px -1px 0 rgb(110, 138, 145), 1px -1px 0 rgb(110, 138, 145), -1px 1px 0 rgb(110, 138, 145), 1px 1px 0 rgb(110, 138, 145);
+}
+
+#nav > span {
+  color: aqua;
+  font-weight: bold;
+  position: absolute;
+  right:0;
+  top:0;
+  margin:15px;
+}
