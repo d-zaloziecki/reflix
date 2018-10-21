@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+}
+
+.movieImg { 
+    border-radius: 7px;
+    text-align: center;
+    max-width: 50%;
+}
+
+.descrShort {
+    margin: 20px;
+}

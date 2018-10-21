@@ -14,3 +14,14 @@
 .container{
     padding: 15px;
 }
+
+.linkSearch {
+    margin: 10px;
+    color: white;
+    text-decoration:none; 
+    text-shadow: -1px -1px 0 rgb(110, 138, 145), 1px -1px 0 rgb(110, 138, 145), -1px 1px 0 rgb(110, 138, 145), 1px 1px 0 rgb(110, 138, 145);
+}
+
+#searchFinds{
+    margin: 20px;
+}

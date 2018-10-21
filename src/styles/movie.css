@@ -1,12 +1,27 @@
-.catalogMovie{
+.movieLink {
     width: 150px;
     height: 150px;
-    display: inline-block;
-    margin: 15px;
-    /* background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    /* cursor: pointer; */
-    box-shadow: 3px 4px 5px #888888;
+    background-size: cover; 
     border-radius: 3px;
 }
+
+.catalogMovie {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: 3px 4px 5px #464545;
+}
+
+.addRemoveBtn {
+     width:30;
+     height: 30px;
+     position: absolute;
+     right:0;
+     top:0;
+     margin: 5px;
+     /* content: url(add.png) */
+ }
