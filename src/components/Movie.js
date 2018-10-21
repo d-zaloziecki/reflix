@@ -34,7 +34,7 @@ class Movie extends Component {
                     <Link to={"/movieDetail/"+movie.id}>
                         <div style={{ backgroundImage: "url("+movie.img+")"}} className="movieLink"></div>
                     </Link>
-                    <img className="addRemoveBtn" id={movie.id} onClick={this.addRemoveBtn} src={rented.some(r=>r.title===movie.title) ? this.state.minusIcon : this.state.plusIcon} alt="" />
+                    <img className="addRemoveBtn" id={movie.id} onClick={this.addRemoveBtn} src={rented.some(r=>r.id===movie.id) ? this.state.minusIcon : this.state.plusIcon} alt="" />
                 </div>
             );
         }
