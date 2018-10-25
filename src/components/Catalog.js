@@ -8,35 +8,24 @@ class Catalog extends Component {
         super();
         this.state = {
             searchInput: "",
-            searchFinds: [],
         }
     }
 
     handleInput = (e) => {
         let inpVal = e.target.value;
-        this.setState({ searchInput: inpVal }, this.search(inpVal))
-    }
-
-    search = (inputValue) => {
-        if (inputValue === "") {
-            let searchFinds = [...this.state.searchFinds]
-            searchFinds.splice(0)
-            this.setState({ searchFinds: searchFinds })
-            return
-        }
-        let searchFinds = this.props.movies.filter(m => m.title.toLowerCase().indexOf(inputValue) > -1)
-        this.setState({ searchFinds: searchFinds })
+        this.setState({ searchInput: inpVal } );
     }
 
     displaySearchFindes = () => {
-        if (this.state.searchFinds.length > 0) {
+            if(this.state.searchInput === ""){
+                return null;
+            }
             return (
                 <div id="searchFinds">
-                    {this.state.searchFinds
-                        .map(m => { return (<div key={m.id}><Link to={"/movieDetail/" + m.id} className="linkSearch">{m.title}</Link></div>) })}
+                    {this.props.movies
+                        .map(m => { if (m.title.toLowerCase().includes(this.state.searchInput)) return (<div key={m.id}><Link to={"/movieDetail/" + m.id} className="linkSearch">{m.title}</Link></div>); else return null})}
                 </div>
             )
-        }
     }
 
     displayRentedMovies = (user) => {
